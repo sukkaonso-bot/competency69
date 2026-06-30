@@ -89,20 +89,20 @@
 
                 <p class="px-3 text-[10px] font-bold text-slate-500 uppercase tracking-widest pt-5 pb-2">ระบบย่อยและแดชบอร์ด</p>
 
-                <!-- แดชบอร์ดที่ 1: ภาพรวม 43 หน่วยงาน -->
-                <button onclick="loadDashboard('dashboard_summary.html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
+                <!-- แดชบอร์ดที่ 1: ภาพรวม 43 หน่วยงาน (เรียกตรงตามชื่อไฟล์เดิมของผู้ใช้) -->
+                <button onclick="loadDashboard('dashboard_2569 (2).html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
                     <i class="fa-solid fa-chart-line w-5 text-center text-base"></i>
                     <span class="text-left leading-normal">สรุปผลประเมิน (43 หน่วยงาน)</span>
                 </button>
 
-                <!-- แดชบอร์ดที่ 2: ระบบควบคุม 3 ฝ่าย -->
-                <button onclick="loadDashboard('competency_system.html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
+                <!-- แดชบอร์ดที่ 2: ระบบควบคุม 3 ฝ่าย (เรียกตรงตามชื่อไฟล์เดิมของผู้ใช้) -->
+                <button onclick="loadDashboard('ประเมินสมรรถนะพยาบาล_ปี2569_อัปเดตระบบแล้ว (1).html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
                     <i class="fa-solid fa-file-shield w-5 text-center text-base"></i>
                     <span class="text-left leading-normal">ระบบรายงานผล (ควบคุม 3 ฝ่าย)</span>
                 </button>
 
-                <!-- แดชบอร์ดที่ 3: แดชบอร์ดพร้อมใช้ -->
-                <button onclick="loadDashboard('competency_dashboard.html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
+                <!-- แดชบอร์ดที่ 3: แดชบอร์ดพร้อมใช้ (เรียกตรงตามชื่อไฟล์เดิมของผู้ใช้) -->
+                <button onclick="loadDashboard('nurse_competency_dashboard_ready.html', this)" class="nav-btn w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 text-slate-400 hover:bg-slate-800/60 hover:text-white">
                     <i class="fa-solid fa-hospital-user w-5 text-center text-base"></i>
                     <span class="text-left leading-normal">แดชบอร์ดสมรรถนะหลักพยาบาล</span>
                 </button>
@@ -114,7 +114,7 @@
                     <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
                     <div class="text-xs">
                         <p class="font-medium text-slate-200">สถานะ GitHub Pages</p>
-                        <p class="text-slate-500 text-[10px]">เปิดดูออนไลน์สำเร็จ</p>
+                        <p class="text-slate-500 text-[10px]">ระบบทำงานแบบไดนามิก</p>
                     </div>
                 </div>
             </div>
@@ -169,6 +169,33 @@
                     </div>
                 </div>
 
+                <!-- 💡 Troubleshooting 404 Guide (ช่วยเหลือผู้ใช้) -->
+                <div class="p-6 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-200 space-y-3">
+                    <h3 class="font-bold text-base flex items-center gap-2 text-amber-400">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        คำแนะนำสำคัญ: วิธีแก้ไขและป้องกัน Error 404 เมื่อกดสลับหน้าเว็บ
+                    </h3>
+                    <p class="text-xs md:text-sm leading-relaxed text-slate-300">
+                        หากคุณคลิกเลือกที่เมนูด้านซ้ายแล้วเจอหน้าจอขาวพร้อมคำว่า <strong class="text-white">"404 Not Found"</strong> เป็นเพราะชื่อไฟล์ที่อัปโหลดขึ้น GitHub ไม่ตรงกับที่ระบบเรียกใช้ในรหัสโค้ด วิธีตรวจสอบและแก้ไขทำได้ตามขั้นตอนนี้ครับ:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 text-xs md:text-sm text-slate-300">
+                        <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/80 space-y-2">
+                            <span class="font-bold text-amber-400 block"><i class="fa-solid fa-list-check"></i> 1. ตรวจสอบชื่อไฟล์ในคลังข้อมูล (Repository)</span>
+                            <p>ให้แน่ใจว่าไฟล์ที่อัปโหลดเข้า GitHub มีชื่อเขียนสะกดตรงกับด้านล่างนี้ทุกตัวอักษร:</p>
+                            <ul class="list-disc pl-5 space-y-1 font-mono text-slate-400 text-xs">
+                                <li>index.html <span class="text-emerald-400">(หน้าเว็บหลักนี้)</span></li>
+                                <li>dashboard_2569 (2).html</li>
+                                <li>ประเมินสมรรถนะพยาบาล_ปี2569_อัปเดตระบบแล้ว (1).html</li>
+                                <li>nurse_competency_dashboard_ready.html</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/80 space-y-2">
+                            <span class="font-bold text-emerald-400 block"><i class="fa-solid fa-circle-info"></i> 2. วิธีการอัปโหลดที่ง่ายที่สุด</span>
+                            <p>ไม่ต้องเปลี่ยนชื่อไฟล์เดิมของคุณในคอมพิวเตอร์เลย! ให้เปิดหน้าเว็บ GitHub แล้วกด <strong class="text-white">Add file -> Upload files</strong> จากนั้นลากไฟล์ทั้ง 3 ไฟล์นั้นมาวางได้ทันที ระบบจะอัปโหลดชื่อนั้นให้อัตโนมัติและสลับเปลี่ยนหน้าได้ทันที!</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 3 Dashboards Gateway Cards -->
                 <div class="space-y-4">
                     <h3 class="text-lg font-bold text-white flex items-center gap-2">
@@ -188,7 +215,7 @@
                                     สรุปผลคะแนนสมรรถนะจริงของหัวหน้าหน่วยงานทั้ง 43 แผนก/หอผู้ป่วย มีข้อมูลสถิติแยกตามประสบการณ์ การประเมินผ่านเกณฑ์ และสรุปข้อควรพัฒนาอย่างเด่นชัด
                                 </p>
                             </div>
-                            <button onclick="loadDashboard('dashboard_summary.html', document.querySelectorAll('.nav-btn')[1])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
+                            <button onclick="loadDashboard('dashboard_2569 (2).html', document.querySelectorAll('.nav-btn')[1])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
                                 เปิดแดชบอร์ดนี้ <i class="fa-solid fa-chevron-right text-[10px]"></i>
                             </button>
                         </div>
@@ -204,7 +231,7 @@
                                     เครื่องมือจัดสรร นำเข้าข้อมูล และคำนวณสถิติเพื่อแบ่งการประเมิน 3 มิติอย่างสมบูรณ์แบบ พร้อมระบบนำเข้าไฟล์ Excel เพื่ออัปเดตข้อมูลพนักงาน
                                 </p>
                             </div>
-                            <button onclick="loadDashboard('competency_system.html', document.querySelectorAll('.nav-btn')[2])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
+                            <button onclick="loadDashboard('ประเมินสมรรถนะพยาบาล_ปี2569_อัปเดตระบบแล้ว (1).html', document.querySelectorAll('.nav-btn')[2])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
                                 เปิดแดชบอร์ดนี้ <i class="fa-solid fa-chevron-right text-[10px]"></i>
                             </button>
                         </div>
@@ -220,7 +247,7 @@
                                     ระบบรายงานผลสมรรถนะหลักของพยาบาลวิชาชีพกลุ่มภารกิจพยาบาลแบบละเอียด เจาะลึกระดับแผนกและสแกนผลรายบุคคลอย่างละเอียดยิบ
                                 </p>
                             </div>
-                            <button onclick="loadDashboard('competency_dashboard.html', document.querySelectorAll('.nav-btn')[3])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
+                            <button onclick="loadDashboard('nurse_competency_dashboard_ready.html', document.querySelectorAll('.nav-btn')[3])" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-teal-600 text-slate-300 hover:text-white rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5">
                                 เปิดแดชบอร์ดนี้ <i class="fa-solid fa-chevron-right text-[10px]"></i>
                             </button>
                         </div>
@@ -284,8 +311,8 @@
                 welcomeView.classList.add('hidden');
                 iframe.classList.remove('hidden');
 
-                // เปลี่ยนหน้า Iframe
-                iframe.src = pageSrc;
+                // เปลี่ยนหน้า Iframe (แปลง URL สำหรับสัญลักษณ์ภาษาไทยและเว้นวรรคให้ถูกต้องโดยอัตโนมัติ)
+                iframe.src = encodeURI(pageSrc);
 
                 // เมื่อข้อมูลใน Iframe โหลดเสร็จแล้ว ให้เอาอนิเมชั่นรอโหลดออก
                 iframe.onload = function() {
